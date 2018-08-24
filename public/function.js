@@ -2,9 +2,7 @@
  * Transform a selectbox to datatable in a Bootstrap modal window.
  * In datatable one could search items in a way that is not possible in a selectbox.
  * Add function.js and call init function.
- * Require:
-     - twitter/bootstrap335v.
-     - wf/dom
+ * Require twitter/bootstrap335v.
  */
 function PluginFormSelect_to_table_v1(){
   /**
@@ -117,7 +115,7 @@ function PluginFormSelect_to_table_v1(){
     if(select.options[select.selectedIndex].text){
       text = select.options[select.selectedIndex].text;
     }
-    document.getElementById('link_'+this.data.id).innerHTML=text.replace(':', ', ');
+    document.getElementById('link_'+this.data.id).innerHTML=text.replace(/:/g, ', ');
   }
   
 }
