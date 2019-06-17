@@ -4,11 +4,10 @@ Transform a selectbox to datatable in a Bootstrap modal window.
 
 Include function.js via widget.
 ```
--
-  type: widget
-  data:
-    plugin: form/select_to_table_v1
-    method: include
+type: widget
+data:
+  plugin: form/select_to_table_v1
+  method: include
 ```
 
 Then run this javascript to modify a selectbox. 
