@@ -29,9 +29,9 @@ function PluginFormSelect_to_table_v1(){
     var element = [
       {type: 'a', innerHTML: [
           {type: 'div', innerHTML: [
-              {type: 'span', attribute: {class: 'glyphicon glyphicon-triangle-right', style: 'float:right'}},
+              {type: 'span', innerHTML: '&raquo;', attribute: {class: 'glyphicon glyphicon-triangle-right', style: 'float:right'}},
               {type: 'span', innerHTML: text.replace(/:/g, ', '), attribute: {id: 'link_'+id}}
-          ], attribute: {class: 'well', style: 'padding:10px'}}
+          ], attribute: {class: 'alert alert-info', style: 'padding:10px;background:silver;'}}
       ], attribute: {href: '#', onclick: "PluginFormSelect_to_table_v1.click({id: '"+id+"', columns: '"+columns+"', label: '"+label+"'});"}}
     ];
     PluginWfDom.render(element, document.getElementById('div_'+id));
@@ -76,7 +76,7 @@ function PluginFormSelect_to_table_v1(){
     var th = [];
     var columns = this.data.columns.split(',');
     for(var i=0; i<columns.length;i++){
-      th[i] = {type: 'td', innerHTML: columns[i]};
+      th[i] = {type: 'th', innerHTML: columns[i]};
     }
     var tr = [{type: 'tr', innerHTML: th}];
     PluginWfDom.render(tr, document.getElementById('thead_select_to_table'));
@@ -120,4 +120,3 @@ function PluginFormSelect_to_table_v1(){
   
 }
 var PluginFormSelect_to_table_v1 = new PluginFormSelect_to_table_v1();
-
