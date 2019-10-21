@@ -29,7 +29,7 @@ function PluginFormSelect_to_table_v1(){
     var element = [
       {type: 'a', innerHTML: [
           {type: 'div', innerHTML: [
-              {type: 'span', innerHTML: '&raquo;', attribute: {class: 'glyphicon glyphicon-triangle-right', style: 'float:right'}},
+              {type: 'span', innerHTML: '&raquo;', attribute: {style: 'float:right'}},
               {type: 'span', innerHTML: text.replace(/:/g, ', '), attribute: {id: 'link_'+id}}
           ], attribute: {class: 'alert alert-info', style: 'padding:10px;background:silver;'}}
       ], attribute: {href: '#', onclick: "PluginFormSelect_to_table_v1.click({id: '"+id+"', columns: '"+columns+"', label: '"+label+"'});"}}
