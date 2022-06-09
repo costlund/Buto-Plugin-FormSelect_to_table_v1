@@ -1,11 +1,16 @@
-version: '1.1'
+version: 1.1.1
 history:
-  '1.1':
+  1.1.1:
+    date: '2022-06-09'
+    title: I18N
+    description: 'Remove json file param due to it will be automatic set.'
+  1.1.0:
     date: '2019-10-21'
     title: 'Bootstrap 4'
     description: 'Remove Glyphicon and replace well with alert.'
-  '1.0':
+  1.0.0:
     date: '2019-05-15'
+    title: Manifest
     description: 'Manifest created.'
 plugin:
   -

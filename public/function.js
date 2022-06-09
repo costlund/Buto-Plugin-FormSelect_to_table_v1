@@ -61,8 +61,7 @@ function PluginFormSelect_to_table_v1(){
         ordering: true,
         info: true,
         searching: true,
-        order: [[0,'asc']],
-        language: {url: "/plugin/datatable/datatable_1_10_16/i18n/Swedish.json"}
+        order: [[0,'asc']]
       };
       
       datatable_table_account_list = $('#table_select_to_table').DataTable(data);
